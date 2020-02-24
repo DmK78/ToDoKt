@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_tasks_list.view.*
 import ru.job4j.todokt.R
 import ru.job4j.todokt.add_task.TaskActivity
+import ru.job4j.todokt.db.Task
 
 /**
  * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
@@ -32,7 +33,7 @@ class TasksListFragment : Fragment() {
         val view: View = inflater.inflate(R.layout.activity_tasks_list, container, false)
         viewModel = ViewModelProviders.of(this)[TasksListViewModel::class.java]
         viewModel.getTasksMutableLiveData().observe(viewLifecycleOwner, Observer {
-            tasksAdapter.setData(it)
+            tasksAdapter.setData(it as List<Task>)
         })
         viewModel.getAllTasks()
         setupAdapter(view)

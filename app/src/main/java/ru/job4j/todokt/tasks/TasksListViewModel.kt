@@ -14,20 +14,20 @@ import ru.job4j.todokt.db.TasksRepository
 
 class TasksListViewModel(application: Application) : AndroidViewModel(application) {
 
-    var tasksRepository: TasksRepository = TasksRepository.getInstance(application)
-    private val tasksListMutableLiveData = MutableLiveData<List<Task>>()
+    var tasksRepository: TasksRepository? = TasksRepository.getInstance(application)
+    private val tasksListMutableLiveData = MutableLiveData<List<Task?>?>()
 
     fun getAllTasks() {
-        tasksRepository.getAllTasks(tasksListMutableLiveData)
+        tasksRepository!!.getAllTasks(tasksListMutableLiveData)
 
     }
 
     fun addTask(task: Task) {
 
-        tasksRepository.addTask(task)
+        tasksRepository!!.addTask(task)
     }
 
-    fun deleteAllTasks() = tasksRepository.deleteAllTasks()
+    fun deleteAllTasks() = tasksRepository!!.deleteAllTasks()
 
 
 fun getTasksMutableLiveData() = tasksListMutableLiveData

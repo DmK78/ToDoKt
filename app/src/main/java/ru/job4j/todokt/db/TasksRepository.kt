@@ -63,7 +63,7 @@ class TasksRepository private constructor(private val context: Context) {
                 }
 
                 override fun onError(e: Throwable) {
-                    Log.i(TAG, e.message)
+                    Log.i(TAG, e?.message)
                 }
             })
     }
@@ -78,7 +78,7 @@ class TasksRepository private constructor(private val context: Context) {
                 }
 
                 override fun onError(e: Throwable) {
-                    Log.i(TAG, e.message)
+                    Log.i(TAG, e?.message)
                 }
             })
     }
@@ -94,7 +94,7 @@ class TasksRepository private constructor(private val context: Context) {
                 }
 
                 override fun onError(e: Throwable) {
-                    Log.i(TAG, e.message)
+                    Log.i(TAG, e?.message)
                 }
             })
     }
@@ -109,7 +109,7 @@ class TasksRepository private constructor(private val context: Context) {
                 }
 
                 override fun onError(e: Throwable) {
-                    Log.i(TAG, e.message)
+                    Log.i(TAG, e?.message)
                 }
             })
     }
