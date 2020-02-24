@@ -20,12 +20,10 @@ import io.reactivex.Single;
 
 
 /**
- * interface BdActionDao methods descriptions
- * @author Dmitry Kolgabov (mailto:dmk78.inbox.ru)
- *  * @since 11.10.2019
- *  * @version $Id$
+ * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
+ * @version $Id$
+ * @since 12.02.2020
  */
-
 
 @Dao
 public interface TaskDao {

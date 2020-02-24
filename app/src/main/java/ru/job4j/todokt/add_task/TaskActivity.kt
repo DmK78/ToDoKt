@@ -6,6 +6,12 @@ import androidx.fragment.app.Fragment
 import ru.job4j.todokt.BaseActivity
 import ru.job4j.todokt.tasks.TasksListFragment
 
+/**
+ * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
+ * @version $Id$
+ * @since 12.02.2020
+ */
+
 class TaskActivity : BaseActivity() {
     override fun createFragment(): Fragment {
 

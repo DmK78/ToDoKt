@@ -20,6 +20,12 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.observers.DisposableSingleObserver;
 import io.reactivex.schedulers.Schedulers;
 
+/**
+ * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
+ * @version $Id$
+ * @since 12.02.2020
+ */
+
 public class TasksRepository {
 
     private AppDatabase appDatabase;
@@ -27,13 +33,7 @@ public class TasksRepository {
     private Context context;
     private final String TAG = this.getClass().getSimpleName();
 
-    /**
-     * Class BdActionsRepository methods implementations
-     *
-     * @author Dmitry Kolgabov (mailto:dmk78.inbox.ru)
-     * * @since 11.10.2019
-     * * @version $Id$
-     */
+
     private TasksRepository(Context context) {
         this.context = context;
         appDatabase = AppDatabase.getInstance(context);
@@ -46,9 +46,7 @@ public class TasksRepository {
         return mInstance;
     }
 
-    public AppDatabase getAppDatabase() {
-        return appDatabase;
-    }
+
 
 
     public void getAllTasks(final MutableLiveData<List<Task>> callback) {

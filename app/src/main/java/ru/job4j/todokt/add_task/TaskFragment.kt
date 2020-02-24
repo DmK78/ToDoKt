@@ -17,20 +17,15 @@ import ru.job4j.todokt.db.Task
 import ru.job4j.todokt.tasks.TasksListActivity
 import ru.job4j.todokt.tasks.TasksListFragment
 
+/**
+ * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
+ * @version $Id$
+ * @since 12.02.2020
+ */
 
 class TaskFragment : Fragment() {
-    /*private var task: Task? = null
-    private val indexTask = -1
-    private var editTextName: EditText? = null
-    private var editTextDesc: EditText? = null
-    private var textViewCreated: TextView? = null
-    private var textViewClosed: TextView? = null
-    private var buttonSave: Button? = null
-    private var buttonCancel: Button? = null
-    private var buttonDelete: Button? = null*/
     private lateinit var binding: ActivityTaskBinding
     private lateinit var viewModel: TaskViewModel
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -54,7 +49,6 @@ class TaskFragment : Fragment() {
                 else -> viewModel.updateTask()
             }
             startActivity(TasksListActivity.create(context))
-
         }
         binding.buttonCancel.setOnClickListener {
             startActivity(TasksListActivity.create(context))
@@ -65,7 +59,6 @@ class TaskFragment : Fragment() {
         }
         return binding.root
     }
-
 
     companion object {
         fun of(

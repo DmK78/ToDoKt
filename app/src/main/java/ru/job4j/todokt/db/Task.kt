@@ -8,6 +8,12 @@ import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
+ * @version $Id$
+ * @since 12.02.2020
+ */
+
 @Entity(tableName = "tasks")
 data class Task(
     @field:PrimaryKey(autoGenerate = true)

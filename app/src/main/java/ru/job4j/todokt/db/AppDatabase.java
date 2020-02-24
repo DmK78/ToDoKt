@@ -9,10 +9,9 @@ import androidx.room.RoomDatabase;
 
 
 /**
- * Class AppDatabase reoom database instance
- * @author Dmitry Kolgabov (mailto:dmk78.inbox.ru)
- *  * @since 11.10.2019
- *  * @version $Id$
+ * @author Dmitry Kolganov (mailto:dmk78@inbox.ru)
+ * @version $Id$
+ * @since 12.02.2020
  */
 
 @Database(entities = {Task.class}, version = 3, exportSchema = false)
