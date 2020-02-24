@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="created">Created</string>
+    <string name="closed">Closed</string>
+
+    <string name="delete">DELETE</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+
+</resources>
